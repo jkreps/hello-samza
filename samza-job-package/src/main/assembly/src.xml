@@ -34,20 +34,22 @@
       <source>${basedir}/src/main/resources/log4j.xml</source>
       <outputDirectory>lib</outputDirectory>
     </file>
+    <file>
+      <source>${basedir}/src/main/config/wikipedia-feed.samza</source>
+      <outputDirectory>config</outputDirectory>
+    </file>
+    <file>
+      <source>${basedir}/src/main/config/wikipedia-parser.samza</source>
+      <outputDirectory>config</outputDirectory>
+    </file>
+    <file>
+      <source>${basedir}/src/main/config/wikipedia-stats.samza</source>
+      <outputDirectory>config</outputDirectory>
+    </file>
     <!-- filtered=true, so we do variable expansion so the yarn package path 
       always points to the correct spot on any machine -->
     <file>
-      <source>${basedir}/src/main/config/wikipedia-feed.properties</source>
-      <outputDirectory>config</outputDirectory>
-      <filtered>true</filtered>
-    </file>
-    <file>
-      <source>${basedir}/src/main/config/wikipedia-parser.properties</source>
-      <outputDirectory>config</outputDirectory>
-      <filtered>true</filtered>
-    </file>
-    <file>
-      <source>${basedir}/src/main/config/wikipedia-stats.properties</source>
+      <source>${basedir}/src/main/config/shared.properties</source>
       <outputDirectory>config</outputDirectory>
       <filtered>true</filtered>
     </file>
